@@ -1,0 +1,90 @@
+/**
+ * Tema simplificado - WCAG 2.2 AAA
+ * Diseño minimalista para personas con discapacidad cognitiva
+ */
+
+[data-theme="simplified"] {
+  /* Colores simples y claros */
+  --color-primary: #0066CC;
+  --color-primary-dark: #004C99;
+  --color-primary-light: #3385D6;
+  --color-primary-text: #FFFFFF;
+
+  --color-secondary: #666666;
+  --color-secondary-dark: #4D4D4D;
+  --color-secondary-light: #808080;
+  --color-secondary-text: #FFFFFF;
+
+  /* Neutros simples */
+  --color-neutral-white: #FFFFFF;
+  --color-neutral-dark: #000000;
+  --color-neutral-gray: #808080;
+  --color-neutral-light: #F0F0F0;
+
+  /* Feedback con íconos además de colores */
+  --color-success: #00AA00;
+  --color-warning: #FF9900;
+  --color-error: #CC0000;
+  --color-info: #0099CC;
+
+  /* Texto grande */
+  --color-text: #000000;
+  --color-text-secondary: #333333;
+  --color-bg: #FFFFFF;
+  --color-bg-secondary: #F8F8F8;
+
+  /* Focus muy claro */
+  --color-focus-ring: #0066CC;
+  --focus-ring-width: 4px;
+  --focus-ring-offset: 4px;
+
+  /* Sombras sutiles */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  /* Bordes redondeados para suavidad */
+  --border-radius: 8px;
+  --border-width: 3px;
+
+  /* Espaciado generoso */
+  --spacing-unit: 16px;
+
+  /* Tamaños de fuente grandes */
+  --font-size-sm: 1rem;
+  --font-size-base: 1.25rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 1.75rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3rem;
+
+  /* Line height generoso */
+  --line-height-tight: 1.4;
+  --line-height-normal: 1.7;
+  --line-height-relaxed: 2;
+}
+
+/* Estilos adicionales para modo simplificado */
+[data-theme="simplified"] {
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+[data-theme="simplified"] button,
+[data-theme="simplified"] .card,
+[data-theme="simplified"] input {
+  box-shadow: var(--shadow-md);
+}
+
+[data-theme="simplified"] * {
+  letter-spacing: 0.05em;
+}
+
+/* Ocultar elementos complejos en modo simplificado */
+[data-theme="simplified"] .complex-feature {
+  display: none;
+}
+
+[data-theme="simplified"] .simplified-only {
+  display: block;
+}

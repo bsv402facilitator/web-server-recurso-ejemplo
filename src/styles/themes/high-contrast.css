@@ -1,0 +1,84 @@
+/**
+ * Tema alto contraste - WCAG 2.2 AAA
+ * Maximiza el contraste para personas con baja visión
+ */
+
+[data-theme="high-contrast"] {
+  /* Blanco y negro para máximo contraste */
+  --color-primary: #000000;
+  --color-primary-dark: #000000;
+  --color-primary-light: #1A1A1A;
+  --color-primary-text: #FFFFFF;
+
+  --color-secondary: #000000;
+  --color-secondary-dark: #000000;
+  --color-secondary-light: #1A1A1A;
+  --color-secondary-text: #FFFFFF;
+
+  /* Alto contraste */
+  --color-neutral-white: #FFFFFF;
+  --color-neutral-dark: #000000;
+  --color-neutral-gray: #000000;
+  --color-neutral-light: #FFFFFF;
+
+  /* Feedback con colores distintivos */
+  --color-success: #00FF00;
+  --color-warning: #FFFF00;
+  --color-error: #FF0000;
+  --color-info: #00FFFF;
+
+  /* Texto */
+  --color-text: #000000;
+  --color-text-secondary: #000000;
+  --color-bg: #FFFFFF;
+  --color-bg-secondary: #FFFFFF;
+
+  /* Focus muy visible */
+  --color-focus-ring: #FF00FF;
+  --focus-ring-width: 4px;
+  --focus-ring-offset: 3px;
+
+  /* Sin sombras para evitar confusión */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+
+  /* Bordes más gruesos */
+  --border-radius: 0px;
+  --border-width: 4px;
+
+  /* Espaciado aumentado */
+  --spacing-unit: 12px;
+
+  /* Tamaños de fuente aumentados */
+  --font-size-sm: 1rem;
+  --font-size-base: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 1.75rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+
+  /* Line height aumentado */
+  --line-height-tight: 1.5;
+  --line-height-normal: 1.8;
+  --line-height-relaxed: 2;
+}
+
+/* Estilos adicionales para alto contraste */
+[data-theme="high-contrast"] * {
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+[data-theme="high-contrast"] button,
+[data-theme="high-contrast"] input,
+[data-theme="high-contrast"] select,
+[data-theme="high-contrast"] textarea {
+  border-width: 4px !important;
+}
+
+[data-theme="high-contrast"] a {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+}

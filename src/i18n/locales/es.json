@@ -1,0 +1,130 @@
+{
+  "app": {
+    "title": "Portal de Pagos Municipales",
+    "subtitle": "Gobierno Digital con Blockchain BSV"
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "payments": "Mis Pagos",
+    "help": "Ayuda",
+    "accessibility": "Accesibilidad"
+  },
+  "wallet": {
+    "connect": "Conectar Wallet",
+    "disconnect": "Desconectar",
+    "connected": "Wallet Conectada",
+    "balance": "Saldo",
+    "address": "Dirección",
+    "no_wallet": "No se detectó wallet BSV",
+    "install_wallet": "Por favor, instala una extensión de wallet BSV",
+    "connecting": "Conectando..."
+  },
+  "services": {
+    "title": "Servicios Disponibles",
+    "categories": {
+      "taxes": "Tasas e Impuestos",
+      "fines": "Multas y Sanciones",
+      "administrative": "Servicios Administrativos",
+      "public_services": "Servicios Públicos"
+    },
+    "types": {
+      "ibi": "Impuesto de Bienes Inmuebles (IBI)",
+      "garbage": "Tasa de Basuras",
+      "plusvalia": "Plusvalía",
+      "traffic_fine": "Multas de Tráfico",
+      "admin_fine": "Infracciones Administrativas",
+      "certificate": "Certificados",
+      "license": "Licencias",
+      "registry": "Padrón",
+      "water": "Agua",
+      "transport": "Transporte",
+      "sports": "Instalaciones Deportivas",
+      "culture": "Actividades Culturales"
+    }
+  },
+  "payment": {
+    "title": "Realizar Pago",
+    "amount": "Importe",
+    "reference": "Referencia",
+    "confirm": "Confirmar Pago",
+    "cancel": "Cancelar",
+    "processing": "Procesando pago...",
+    "success": "Pago completado exitosamente",
+    "error": "Error al procesar el pago",
+    "receipt": "Ver Recibo",
+    "status": {
+      "idle": "Listo",
+      "requesting": "Solicitando...",
+      "payment_required": "Pago requerido",
+      "signing": "Firmando transacción...",
+      "broadcasting": "Enviando a blockchain...",
+      "confirming": "Esperando confirmación...",
+      "confirmed": "Confirmado",
+      "failed": "Fallido"
+    }
+  },
+  "accessibility": {
+    "title": "Opciones de Accesibilidad",
+    "language": "Idioma",
+    "theme": "Tema Visual",
+    "themes": {
+      "default": "Por Defecto",
+      "high_contrast": "Alto Contraste",
+      "simplified": "Simplificado"
+    },
+    "text_size": "Tamaño de Texto",
+    "text_sizes": {
+      "sm": "Pequeño",
+      "base": "Normal",
+      "lg": "Grande",
+      "xl": "Muy Grande",
+      "2xl": "Extra Grande"
+    },
+    "level": "Nivel de Detalle",
+    "levels": {
+      "simple": "Simple",
+      "standard": "Estándar",
+      "technical": "Técnico"
+    },
+    "level_desc": {
+      "simple": "Información básica y clara",
+      "standard": "Nivel de detalle equilibrado",
+      "technical": "Información técnica completa"
+    },
+    "text_to_speech": "Lectura en Voz Alta",
+    "text_to_speech_desc": "Lee el contenido en voz alta",
+    "reduced_motion": "Reducir Movimiento",
+    "reduced_motion_desc": "Desactiva animaciones",
+    "keyboard_help": "Ayuda de Navegación por Teclado",
+    "keyboard_help_desc": "Muestra atajos de teclado",
+    "additional_options": "Opciones Adicionales",
+    "preview_text": "Este es un ejemplo de cómo se verá el texto",
+    "wcag_compliant": "Cumple con WCAG 2.2 AAA",
+    "wcag_desc": "Este portal cumple con los estándares más altos de accesibilidad web"
+  },
+  "errors": {
+    "generic": "Ha ocurrido un error",
+    "network": "Error de conexión",
+    "wallet_not_connected": "Wallet no conectada",
+    "insufficient_funds": "Fondos insuficientes",
+    "transaction_failed": "La transacción falló",
+    "try_again": "Intentar de nuevo"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "skip_to_content": "Saltar al contenido principal",
+    "request": "Solicitar",
+    "period": "Periodo",
+    "deadline": "Fecha límite",
+    "estimated_time": "Tiempo estimado",
+    "filter_by_category": "Filtrar por categoría",
+    "all_categories": "Todas las categorías",
+    "search": "Buscar"
+  }
+}

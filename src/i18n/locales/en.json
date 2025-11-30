@@ -1,0 +1,110 @@
+{
+  "app": {
+    "title": "Municipal Payment Portal",
+    "subtitle": "Digital Government with BSV Blockchain"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "payments": "My Payments",
+    "help": "Help",
+    "accessibility": "Accessibility"
+  },
+  "wallet": {
+    "connect": "Connect Wallet",
+    "disconnect": "Disconnect",
+    "connected": "Wallet Connected",
+    "balance": "Balance",
+    "address": "Address",
+    "no_wallet": "No BSV wallet detected",
+    "install_wallet": "Please install a BSV wallet extension",
+    "connecting": "Connecting..."
+  },
+  "services": {
+    "title": "Available Services",
+    "categories": {
+      "taxes": "Taxes and Fees",
+      "fines": "Fines and Penalties",
+      "administrative": "Administrative Services",
+      "public_services": "Public Services"
+    },
+    "types": {
+      "ibi": "Real Estate Tax (IBI)",
+      "garbage": "Garbage Fee",
+      "plusvalia": "Capital Gains Tax",
+      "traffic_fine": "Traffic Fines",
+      "admin_fine": "Administrative Violations",
+      "certificate": "Certificates",
+      "license": "Licenses",
+      "registry": "Registry",
+      "water": "Water",
+      "transport": "Transport",
+      "sports": "Sports Facilities",
+      "culture": "Cultural Activities"
+    }
+  },
+  "payment": {
+    "title": "Make Payment",
+    "amount": "Amount",
+    "reference": "Reference",
+    "confirm": "Confirm Payment",
+    "cancel": "Cancel",
+    "processing": "Processing payment...",
+    "success": "Payment completed successfully",
+    "error": "Error processing payment",
+    "receipt": "View Receipt",
+    "status": {
+      "idle": "Ready",
+      "requesting": "Requesting...",
+      "payment_required": "Payment required",
+      "signing": "Signing transaction...",
+      "broadcasting": "Broadcasting to blockchain...",
+      "confirming": "Waiting for confirmation...",
+      "confirmed": "Confirmed",
+      "failed": "Failed"
+    }
+  },
+  "accessibility": {
+    "title": "Accessibility Options",
+    "theme": "Visual Theme",
+    "themes": {
+      "default": "Default",
+      "high_contrast": "High Contrast",
+      "simplified": "Simplified"
+    },
+    "text_size": "Text Size",
+    "text_sizes": {
+      "sm": "Small",
+      "base": "Normal",
+      "lg": "Large",
+      "xl": "Very Large",
+      "2xl": "Extra Large"
+    },
+    "level": "Detail Level",
+    "levels": {
+      "simple": "Simple",
+      "standard": "Standard",
+      "technical": "Technical"
+    },
+    "text_to_speech": "Text to Speech",
+    "reduced_motion": "Reduce Motion",
+    "keyboard_help": "Keyboard Navigation Help"
+  },
+  "errors": {
+    "generic": "An error occurred",
+    "network": "Connection error",
+    "wallet_not_connected": "Wallet not connected",
+    "insufficient_funds": "Insufficient funds",
+    "transaction_failed": "Transaction failed",
+    "try_again": "Try again"
+  },
+  "common": {
+    "loading": "Loading...",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "skip_to_content": "Skip to main content"
+  }
+}
