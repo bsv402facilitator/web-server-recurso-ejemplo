@@ -47,7 +47,16 @@ export const AccessibilityProvider: React.FC<AccessibilityProviderProps> = ({ ch
         return DEFAULT_SETTINGS;
       }
     }
-    return DEFAULT_SETTINGS;
+
+    // If no saved settings, check system preferences 
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const prefersContrast = window.matchMedia('(prefers-contrast: high)');
+
+    return {
+      ...DEFAULT_SETTINGS,
+      reducedMotion: prefersReducedMotion.matches,
+      theme: prefersContrast.matches ? 'high-contrast' : 'default',
+    };
   });
 
   const [synth] = useState(() => window.speechSynthesis);
@@ -71,21 +80,6 @@ export const AccessibilityProvider: React.FC<AccessibilityProviderProps> = ({ ch
       document.documentElement.style.removeProperty('--transition-speed');
     }
   }, [settings.reducedMotion]);
-
-  // Detectar preferencias del sistema
-  useEffect(() => {
-    // Reduced motion
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (prefersReducedMotion.matches && !localStorage.getItem('accessibility-settings')) {
-      setSettings(prev => ({ ...prev, reducedMotion: true }));
-    }
-
-    // High contrast
-    const prefersContrast = window.matchMedia('(prefers-contrast: high)');
-    if (prefersContrast.matches && !localStorage.getItem('accessibility-settings')) {
-      setSettings(prev => ({ ...prev, theme: 'high-contrast' }));
-    }
-  }, []);
 
   const updateTheme = (theme: Theme) => {
     setSettings(prev => ({ ...prev, theme }));
