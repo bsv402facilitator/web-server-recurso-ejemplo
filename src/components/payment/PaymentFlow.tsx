@@ -5,7 +5,7 @@ import { Button } from '../ui/Button';
 import type { Service } from '../../types/services';
 import type { PaymentStatus } from '../../types/payment';
 import { useWallet } from '../../contexts/WalletContext';
-import { useAccessibility } from '../../contexts/AccessibilityContext';
+import { useAccessibility } from '../../contexts/useAccessibility';
 import { mockX402Service } from '../../services/mock-x402';
 
 interface PaymentFlowProps {

@@ -1,26 +1,12 @@
-import React, { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
+import React, { useEffect, useState, type ReactNode } from 'react';
 import type {
-  AccessibilitySettings,
-  Theme,
   AccessibilityLevel,
-  TextSize,
+  AccessibilitySettings,
   Language,
+  TextSize,
+  Theme,
 } from '../types/accessibility';
-
-interface AccessibilityContextType {
-  settings: AccessibilitySettings;
-  updateTheme: (theme: Theme) => void;
-  updateLevel: (level: AccessibilityLevel) => void;
-  updateTextSize: (size: TextSize) => void;
-  updateLanguage: (language: Language) => void;
-  toggleTextToSpeech: () => void;
-  toggleReducedMotion: () => void;
-  toggleKeyboardHelp: () => void;
-  speak: (text: string) => void;
-  stopSpeaking: () => void;
-}
-
-const AccessibilityContext = createContext<AccessibilityContextType | undefined>(undefined);
+import { AccessibilityContext, type AccessibilityContextType } from './AccessibilityContextProvider';
 
 const DEFAULT_SETTINGS: AccessibilitySettings = {
   language: 'es',
@@ -154,10 +140,4 @@ export const AccessibilityProvider: React.FC<AccessibilityProviderProps> = ({ ch
   );
 };
 
-export const useAccessibility = (): AccessibilityContextType => {
-  const context = useContext(AccessibilityContext);
-  if (!context) {
-    throw new Error('useAccessibility must be used within AccessibilityProvider');
-  }
-  return context;
-};
+

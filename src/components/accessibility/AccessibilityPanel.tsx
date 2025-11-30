@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useAccessibility } from '../../contexts/AccessibilityContext';
+import { useAccessibility } from '../../contexts/useAccessibility';
 import type { AccessibilityLevel, TextSize, Theme } from '../../types/accessibility';
 import { Button } from '../ui/Button';
 import { Modal } from '../ui/Modal';

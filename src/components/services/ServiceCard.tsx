@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Card } from '../ui/Card';
 import { Button } from '../ui/Button';
 import type { Service } from '../../types/services';
-import { useAccessibility } from '../../contexts/AccessibilityContext';
+import { useAccessibility } from '../../contexts/useAccessibility';
 
 interface ServiceCardProps {
   service: Service;
