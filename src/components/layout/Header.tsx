@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Button } from '../ui/Button';
 import { useWallet } from '../../contexts/WalletContext';
-import { useAccessibility } from '../../contexts/AccessibilityContext';
 import { AccessibilityPanel } from '../accessibility/AccessibilityPanel';
+import { Button } from '../ui/Button';
 
 export const Header: React.FC = () => {
   const { t } = useTranslation();
   const { wallet, connect, disconnect, isConnecting } = useWallet();
-  const { settings } = useAccessibility();
   const [showAccessibilityPanel, setShowAccessibilityPanel] = useState(false);
 
   const handleWalletAction = () => {

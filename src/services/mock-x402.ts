@@ -94,7 +94,7 @@ export class MockX402Facilitator {
     };
   }
 
-  async checkTransactionStatus(txid: string): Promise<{ confirmed: boolean; confirmations: number }> {
+  async checkTransactionStatus(_txid: string): Promise<{ confirmed: boolean; confirmations: number }> {
     // Simular delay
     await this.delay(300);
 
@@ -107,7 +107,7 @@ export class MockX402Facilitator {
     };
   }
 
-  async getPaymentHistory(address: string): Promise<PaymentConfirmation[]> {
+  async getPaymentHistory(_address: string): Promise<PaymentConfirmation[]> {
     // Simular delay
     await this.delay(800);
 
@@ -137,7 +137,7 @@ export class MockX402Facilitator {
     }));
   }
 
-  private extractAmountFromPath(path: string): number {
+  private extractAmountFromPath(_path: string): number {
     // En un caso real, esto extraería el servicio del path
     // Para el mock, usamos un valor por defecto
     return 50000; // 50,000 satoshis

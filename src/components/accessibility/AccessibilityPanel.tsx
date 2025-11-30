@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Modal } from '../ui/Modal';
-import { Button } from '../ui/Button';
 import { useAccessibility } from '../../contexts/AccessibilityContext';
-import type { Theme, TextSize, AccessibilityLevel } from '../../types/accessibility';
+import type { AccessibilityLevel, TextSize, Theme } from '../../types/accessibility';
+import { Button } from '../ui/Button';
+import { Modal } from '../ui/Modal';
 
 interface AccessibilityPanelProps {
   isOpen: boolean;

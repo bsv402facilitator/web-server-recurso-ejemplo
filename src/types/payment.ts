@@ -2,8 +2,8 @@
  * Tipos para pagos X402 y BSV
  */
 
-import { AccessibilityMetadata } from './accessibility';
-import { Service } from './services';
+import type { AccessibilityMetadata } from './accessibility';
+import type { Service } from './services';
 
 export type PaymentStatus =
   | 'idle'
