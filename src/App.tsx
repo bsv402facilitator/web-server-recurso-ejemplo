@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { AccessibilityProvider } from './contexts/accessibility/AccessibilityContext';
+import { AccessibilityProvider } from './contexts/accessibility/AccessibilityProvider';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { HomePage } from './pages/Home';

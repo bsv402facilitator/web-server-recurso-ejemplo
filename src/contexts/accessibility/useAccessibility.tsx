@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { AccessibilityContext, type AccessibilityContextType } from './AccessibilityContextProvider';
+import { AccessibilityContext, type AccessibilityContextType } from './AccessibilityContext';
 
 
 
