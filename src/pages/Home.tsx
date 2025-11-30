@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
-import { useWallet } from '../contexts/WalletContext';
+import { useWallet } from '../contexts/wallet/WalletContext';
 
 export const HomePage: React.FC = () => {
   const { t } = useTranslation();

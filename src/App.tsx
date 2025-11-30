@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import { AccessibilityProvider } from './contexts/AccessibilityContext';
-import { WalletProvider } from './contexts/WalletContext';
+import { AccessibilityProvider } from './contexts/accessibility/AccessibilityContext';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { HomePage } from './pages/Home';
@@ -14,6 +13,7 @@ import './styles/themes/simplified.css';
 
 // Importar mock wallet
 import './services/mock-wallet';
+import { WalletProvider } from './contexts/wallet/WalletContext';
 
 function App() {
   const [currentPage, setCurrentPage] = React.useState<'home' | 'services' | 'payments' | 'help'>('home');

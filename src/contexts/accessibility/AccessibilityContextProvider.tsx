@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import type { AccessibilityLevel, AccessibilitySettings, Language, TextSize, Theme } from "../types/accessibility";
+import type { AccessibilityLevel, AccessibilitySettings, Language, TextSize, Theme } from "../../types/accessibility";
 
 export interface AccessibilityContextType {
   settings: AccessibilitySettings;

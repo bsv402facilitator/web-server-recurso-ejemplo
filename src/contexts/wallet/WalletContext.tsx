@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
-import type { WalletInfo, BSVTransaction } from '../types/payment';
+import type { BSVTransaction, WalletInfo } from '../../types/payment';
 
 interface WalletContextType {
   wallet: WalletInfo;

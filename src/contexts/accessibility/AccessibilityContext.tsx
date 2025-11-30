@@ -5,7 +5,7 @@ import type {
   Language,
   TextSize,
   Theme,
-} from '../types/accessibility';
+} from '../../types/accessibility';
 import { AccessibilityContext, type AccessibilityContextType } from './AccessibilityContextProvider';
 
 const DEFAULT_SETTINGS: AccessibilitySettings = {
