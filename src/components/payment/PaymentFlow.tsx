@@ -4,7 +4,7 @@ import { Modal } from '../ui/Modal';
 import { Button } from '../ui/Button';
 import type { Service } from '../../types/services';
 import type { PaymentStatus } from '../../types/payment';
-import { useWallet } from '../../contexts/wallet/WalletContext';
+import { useWallet } from '../../contexts/wallet/useWallet';
 import { useAccessibility } from '../../contexts/accessibility/useAccessibility';
 import { mockX402Service } from '../../services/mock-x402';
 

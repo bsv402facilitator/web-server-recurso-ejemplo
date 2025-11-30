@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AccessibilityPanel } from '../accessibility/AccessibilityPanel';
 import { Button } from '../ui/Button';
-import { useWallet } from '../../contexts/wallet/WalletContext';
+import { useWallet } from '../../contexts/wallet/useWallet';
 
 export const Header: React.FC = () => {
   const { t } = useTranslation();

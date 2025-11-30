@@ -13,7 +13,7 @@ import './styles/themes/simplified.css';
 
 // Importar mock wallet
 import './services/mock-wallet';
-import { WalletProvider } from './contexts/wallet/WalletContext';
+import { WalletProvider } from './contexts/wallet/WalletProvider';
 
 function App() {
   const [currentPage, setCurrentPage] = React.useState<'home' | 'services' | 'payments' | 'help'>('home');
